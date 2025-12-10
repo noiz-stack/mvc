@@ -292,7 +292,7 @@ git push
 
 ## 📄 License
 
-MIT License - Bebas digunakan untuk keperluan personal maupun komersial
+MIT License - Bebas digunakan 
 
 ## 👨‍💻 Author
 
