@@ -12,15 +12,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="page">
-        <div class="background-blob blob-1"></div>
-        <div class="background-blob blob-2"></div>
-        
-        <?php include $view; ?>
-        
-        <div class="footer">
-            <p>&copy; 2025 Aplikasi Mahasiswa | Liquid Glass Design</p>
+    <!-- Header partial: opening tags, meta, styles and navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index.php">Aplikasi Mahasiswa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php?action=create">Tambah</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</body>
-</html>
+    </nav>
+
+    <main class="py-4">
+
