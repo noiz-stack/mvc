@@ -1,0 +1,46 @@
+# Ignore system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE & Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# Local environment variables
+.env
+.env.local
+.env.*.local
+
+# OS files
+*.log
+*.pid
+
+# Dependencies (jika menggunakan Composer)
+/vendor/
+composer.lock
+
+# Caching
+/cache/
+*.cache
+
+# Temp files
+/tmp/
+/temp/
+
+# Database backups (opsional)
+*.sql
+*.sql.gz
+!database.sql
+
+# Config lokal yang berisi sensitive data
+Config/Database.local.php
