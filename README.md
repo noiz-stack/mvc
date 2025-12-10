@@ -149,7 +149,7 @@ MIT License - Bebas digunakan untuk keperluan personal maupun komersial
 
 ## 👨‍💻 Author
 
-Dibuat dengan ❤️ menggunakan PHP MVC Pattern
+Dibuat dengan ❤️ Atmint menggunakan PHP MVC Pattern
 
 ---
 
