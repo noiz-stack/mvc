@@ -19,6 +19,7 @@ git status
 ```
 
 **Output yang akan Anda lihat:**
+
 ```
 On branch main
 Changes not staged for commit:
@@ -30,6 +31,7 @@ Changes not staged for commit:
 ```
 
 **Penjelasan:**
+
 - `Changes not staged for commit` = file sudah berubah tapi belum di-`add` (belum siap di-commit)
 - Warna merah = file yang belum di-staging area
 
@@ -42,6 +44,7 @@ git diff Views/layout.php
 ```
 
 **Atau lihat semua perubahan:**
+
 ```bash
 git diff
 ```
@@ -51,11 +54,13 @@ Tekan `q` untuk keluar dari paging view.
 ### Langkah 3: Stage Perubahan (Add ke Staging Area)
 
 **Option A: Stage Semua File**
+
 ```bash
 git add .
 ```
 
 **Option B: Stage File Tertentu**
+
 ```bash
 git add README.md
 git add Views/layout.php
@@ -63,6 +68,7 @@ git add Views/footer.php
 ```
 
 **Penjelasan:**
+
 - `git add .` = tambahkan SEMUA file yang berubah ke staging area
 - Staging area = antrian file yang siap di-commit
 
@@ -73,6 +79,7 @@ git status
 ```
 
 **Output yang akan Anda lihat:**
+
 ```
 On branch main
 Changes to be committed:
@@ -83,6 +90,7 @@ Changes to be committed:
 ```
 
 **Penjelasan:**
+
 - `Changes to be committed` = file sudah di-staging area, siap di-commit
 - Warna hijau = file yang sudah di-staging
 
@@ -93,6 +101,7 @@ git commit -m "Update: perbaiki layout dengan header-footer pattern dan tambahka
 ```
 
 **Penjelasan:**
+
 - `git commit` = buat snapshot (versi) kode yang sudah di-staging
 - `-m` flag = attach pesan singkat deskriptif
 - Pesan commit = penjelasan apa yang Anda ubah (penting untuk dokumentasi)
@@ -104,12 +113,14 @@ git log --oneline
 ```
 
 **Output yang akan Anda lihat:**
+
 ```
 a1b2c3d (HEAD -> main) Update: perbaiki layout dengan header-footer pattern
 8f7e6d5 (origin/main) Initial commit
 ```
 
 **Penjelasan:**
+
 - `HEAD -> main` = commit terbaru di branch main lokal
 - `origin/main` = commit terbaru di GitHub (remote)
 - Jika ada perbedaan = ada commit lokal yang belum di-push
@@ -121,11 +132,13 @@ git push
 ```
 
 **atau (lebih eksplisit):**
+
 ```bash
 git push origin main
 ```
 
 **Penjelasan:**
+
 - `git push` = kirim commit lokal ke GitHub
 - `origin` = nama remote repository (GitHub Anda)
 - `main` = nama branch
@@ -137,6 +150,7 @@ git status
 ```
 
 **Output yang akan Anda lihat:**
+
 ```
 On branch main
 Your branch is up to date with 'origin/main'.
@@ -151,18 +165,18 @@ Cek di browser: https://github.com/USERNAME/mvc-mahasiswa (ganti USERNAME)
 
 ## 📋 Cheat Sheet: Perintah Git Penting
 
-| Perintah               | Fungsi                                    |
-| ---------------------- | ----------------------------------------- |
-| `git status`           | Lihat status file (modified, staged, dll) |
-| `git diff`             | Lihat detail perubahan kode                |
-| `git add .`            | Stage semua file yang berubah             |
-| `git add <file>`       | Stage file spesifik                       |
-| `git restore <file>`   | Batalkan perubahan file (revert)          |
-| `git commit -m "msg"`  | Commit dengan pesan                       |
-| `git log`              | Lihat history commit                      |
-| `git log --oneline`    | Lihat history commit (ringkas)            |
-| `git push`             | Push commit ke remote (GitHub)            |
-| `git pull`             | Pull perubahan dari remote ke lokal       |
+| Perintah              | Fungsi                                    |
+| --------------------- | ----------------------------------------- |
+| `git status`          | Lihat status file (modified, staged, dll) |
+| `git diff`            | Lihat detail perubahan kode               |
+| `git add .`           | Stage semua file yang berubah             |
+| `git add <file>`      | Stage file spesifik                       |
+| `git restore <file>`  | Batalkan perubahan file (revert)          |
+| `git commit -m "msg"` | Commit dengan pesan                       |
+| `git log`             | Lihat history commit                      |
+| `git log --oneline`   | Lihat history commit (ringkas)            |
+| `git push`            | Push commit ke remote (GitHub)            |
+| `git pull`            | Pull perubahan dari remote ke lokal       |
 
 ---
 
@@ -196,18 +210,21 @@ Remote (GitHub)
 ### 3. **Commit Message Best Practice**
 
 ❌ Hindari:
+
 - `fix`
 - `update`
 - `changes`
 - `asdf`
 
 ✅ Gunakan:
+
 - `Add: fitur baru`
 - `Fix: bug di validasi form`
 - `Update: dokumentasi README`
 - `Remove: file yang tidak dipakai`
 
 Contoh format: `[Type]: [Deskripsi]`
+
 - `Add:` = menambah fitur/file baru
 - `Fix:` = memperbaiki bug
 - `Update:` = mengubah fitur/dokumentasi yang sudah ada
@@ -217,6 +234,7 @@ Contoh format: `[Type]: [Deskripsi]`
 ### 4. **Pull Request (PR) untuk Kolaborasi**
 
 Workflow di tim:
+
 1. Buat branch baru: `git checkout -b feature/xxx`
 2. Commit perubahan: `git commit -m "..."`
 3. Push branch: `git push -u origin feature/xxx`
@@ -234,6 +252,7 @@ Workflow di tim:
 **Penyebab:** SSH key belum setup atau tidak terdeteksi
 
 **Solusi:**
+
 ```bash
 # Cek apakah SSH key ada
 ls ~/.ssh
@@ -253,6 +272,7 @@ cat ~/.ssh/id_rsa.pub
 **Penyebab:** Remote URL salah atau tidak ada akses
 
 **Solusi:**
+
 ```bash
 # Lihat remote yang sudah ada
 git remote -v
