@@ -147,7 +147,7 @@ Alur request → View → Hasil HTML
 Setiap view (Mahasiswa-list.php, Mahasiswa-add.php, dll):
   1. Include layout.php (header) → buka <!DOCTYPE>, <head>, <body>, navbar
   2. Tampilkan konten view (tabel/form)
-  3. Include footer.php → tutup </main>, </body>, </html>
+
 ```
 
 ### File-file Penting
