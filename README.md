@@ -32,8 +32,6 @@ mvc/
 │   ├── Mahasiswa-list.php      # View daftar mahasiswa (tabel)
 │   ├── Mahasiswa-add.php       # View form tambah mahasiswa
 │   ├── Mahasiswa-edit.php      # View form edit mahasiswa
-│   └── assets/
-│       └── style.css           # Custom stylesheet
 ├── .gitignore                  # File yang diabaikan Git
 └── README.md                   # Dokumentasi ini
 ```
