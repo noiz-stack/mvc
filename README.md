@@ -297,6 +297,7 @@ MIT License - Bebas digunakan
 ## 👨‍💻 Author
 
 Dibuat dengan ❤️ Atmint menggunakan PHP MVC Pattern
+Mochamad sutan syahrul/24161562047
 
 ---
 
