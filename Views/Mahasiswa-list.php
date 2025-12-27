@@ -21,21 +21,23 @@ include __DIR__ . '/../Views/layout.php';
             <tbody>
                 <?php if (!empty($data)): foreach ($data as $m): ?>
                 <tr>
-                    <td><?= htmlspecialchars($m['id']) ?></td>
-                    <td><?= htmlspecialchars($m['nama']) ?></td>
-                    <td><?= htmlspecialchars($m['nim']) ?></td>
-                    <td>
-                        <a href="index.php?action=edit&id=<?= $m['id'] ?>" class="btn btn-sm btn-warning">Edit</a>
-                        <a href="index.php?action=delete&id=<?= $m['id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Hapus data ini?')">Hapus</a>
+   <td><?= htmlspecialchars($m['id']) ?></td>
+   <td><?= htmlspecialchars($m['nama']) ?></td>
+   <td><?= htmlspecialchars($m['nim']) ?></td>
+ <td>
+  <a href="index.php?action=edit&id=<?= $m['id'] ?>" 
+  class="btn btn-sm btn-warning">Edit</a>
+<a href="index.php?action=delete&id=<?= $m['id'] ?>"
+ class="btn btn-sm btn-danger" onclick="return confirm('Hapus data ini?')">Hapus</a>
                     </td>
                 </tr>
                 <?php endforeach; else: ?>
                 <tr>
                     <td colspan="4" class="text-center">Tidak ada data</td>
-                </tr>
-                <?php endif; ?>
-        </table>
-    </div>
+</tr>
+<?php endif; ?>
+ </table>
+ </div>
 </div>
 
 

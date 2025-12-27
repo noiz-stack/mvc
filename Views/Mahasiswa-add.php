@@ -1,5 +1,6 @@
 <?php
 include __DIR__ . '/../Views/layout.php';
+$id = $data['id'] ?? '';
 $nama = $data['nama'] ?? '';
 $nim = $data['nim'] ?? '';
 $errors = $data['errors'] ?? [];
@@ -8,6 +9,7 @@ $errors = $data['errors'] ?? [];
 <div class="container mt-4">
     <h2><?= htmlspecialchars($title ?? 'Tambah Mahasiswa') ?></h2>
 
+    <!---menampilkan pesan error jika ada-->
     <?php if (!empty($errors)): ?>
         <?php foreach ($errors as $err): ?>
             <div class="alert alert-danger"><?= htmlspecialchars($err) ?></div>
@@ -18,7 +20,7 @@ $errors = $data['errors'] ?? [];
         <div class="mb-3">
             <label class="form-label">Nama</label>
             <input type="text" name="nama" class="form-control" value="<?= htmlspecialchars($nama) ?>">
-        </div>
+        </div> <!--- Special chars untuk  mencegah kode berbahaya dieksekusi --->
         <div class="mb-3">
             <label class="form-label">NIM</label>
             <input type="text" name="nim" class="form-control" value="<?= htmlspecialchars($nim) ?>">

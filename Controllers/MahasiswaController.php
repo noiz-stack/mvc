@@ -5,7 +5,7 @@ require_once __DIR__ . '/../Models/Mahasiswa.php';
 class MahasiswaController 
 {
     public function index()
-    {
+    {//memanggil model Mahasiswa dan mengambil semua data
         $model = new Mahasiswa();
         $data = $model->getAll();
         include __DIR__ . '/../Views/Mahasiswa-list.php';

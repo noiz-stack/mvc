@@ -1,5 +1,4 @@
 <?php
-
 require_once __DIR__ . '/../Config/Database.php';
 
 class Mahasiswa{
@@ -21,7 +20,7 @@ class Mahasiswa{
         {//menyiapkan dan menjalankan query insert
          $stmt = $this->conn->prepare("INSERT INTO mahasiswa (nama, nim) VALUES (?, ?)");
         return $stmt->execute([$nama, $nim]);
-        }
+        }//mengambil data mahasiswa berdasarkan id
         public function find($id)
         {
             $stmt = $this->conn->prepare("SELECT * FROM mahasiswa WHERE id=?");
