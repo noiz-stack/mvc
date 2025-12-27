@@ -32,8 +32,6 @@ mvc/
 │   ├── Mahasiswa-list.php      # View daftar mahasiswa (tabel)
 │   ├── Mahasiswa-add.php       # View form tambah mahasiswa
 │   ├── Mahasiswa-edit.php      # View form edit mahasiswa
-│   └── assets/
-│       └── style.css           # Custom stylesheet
 ├── .gitignore                  # File yang diabaikan Git
 └── README.md                   # Dokumentasi ini
 ```
@@ -149,7 +147,7 @@ Alur request → View → Hasil HTML
 Setiap view (Mahasiswa-list.php, Mahasiswa-add.php, dll):
   1. Include layout.php (header) → buka <!DOCTYPE>, <head>, <body>, navbar
   2. Tampilkan konten view (tabel/form)
-  3. Include footer.php → tutup </main>, </body>, </html>
+
 ```
 
 ### File-file Penting
@@ -292,11 +290,16 @@ git push
 
 ## 📄 License
 
+<<<<<<< HEAD
 MIT License - Bebas digunakan
+=======
+MIT License - Bebas digunakan 
+>>>>>>> 661a96a921d4980320e6be432da86ee142989110
 
 ## 👨‍💻 Author
 
 Dibuat dengan ❤️ Atmint menggunakan PHP MVC Pattern
+Mochamad sutan syahrul/24161562047
 
 ---
 
